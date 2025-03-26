@@ -1,6 +1,13 @@
 {
+  "scripts": {
+    "compile": "hardhat compile",
+    "testWeatherContract": "npx hardhat test test/WeatherContract.test.js",
+    "deployWeatherContract": "npx hardhat run scripts/deployWeatherContract.js"
+  },
   "dependencies": {
     "@chainlink/contracts": "^1.3.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
     "hardhat": "^2.22.19"
   },
   "devDependencies": {
